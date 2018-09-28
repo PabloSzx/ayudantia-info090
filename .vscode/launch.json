@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SwingControlDemo",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SwingControlDemo",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SwingListDemo",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SwingListDemo",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SwingJLabelDemo",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SwingJLabelDemo",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SwingComboBoxDemo",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "SwingComboBoxDemo",
+            "args": ""
+        }
+    ]
+}

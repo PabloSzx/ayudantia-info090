@@ -8,8 +8,8 @@ public class GridLayoutDemo {
    public GridLayoutDemo(){
       mainFrame = new JFrame();
       mainFrame.setSize(400,400);
-      mainFrame.setLayout(new GridLayout(filas,columnas));
-      // mainFrame.setLayout(new GridLayout(3,2));
+      // mainFrame.setLayout(new GridLayout(filas,columnas));
+      mainFrame.setLayout(new GridLayout(3,2));
       mainFrame.add(new JButton("UNO"));
       mainFrame.add(new JButton("DOS"));
       mainFrame.add(new JButton("TRES"));

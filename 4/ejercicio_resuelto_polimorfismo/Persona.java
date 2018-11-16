@@ -115,7 +115,7 @@ public class Persona extends Cliente {
     String account = "";
     while (input) {
       try {
-        account = requestInput("Ingrese con que tipo de cuenta desea ingresar la persona al banco (\"Vista\" o \"Credito\"): ").toLowerCase();
+        account = Input.requestInput("Ingrese con que tipo de cuenta desea ingresar la persona al banco (\"Vista\" o \"Credito\"): ").toLowerCase();
         switch (account) {
           case "vista":
             this.habilitarCuenta("vista");
@@ -134,9 +134,9 @@ public class Persona extends Cliente {
     }
 
     if (account.equalsIgnoreCase("vista")) {
-      this.depositar(requestIntInput("Ingrese la cantidad del deposito inicial: "), account);
+      this.depositar(Input.requestIntInput("Ingrese la cantidad del deposito inicial: "), account);
     } else {
-      this.resetCredito(requestIntInput("Ingrese la cantidad del credito inicial: "));
+      this.resetCredito(Input.requestIntInput("Ingrese la cantidad del credito inicial: "));
     }
 
   }
@@ -149,7 +149,7 @@ public class Persona extends Cliente {
 
     if (actual >= (maximo - 2)) {
       while (input) {
-          account = requestInput("Ingrese que cuenta desea ingresar (\"Vista\" o \"Credito\"): ").toLowerCase();
+          account = Input.requestInput("Ingrese que cuenta desea ingresar (\"Vista\" o \"Credito\"): ").toLowerCase();
           switch (account) {
             case "vista":
               this.habilitarCuenta("vista");
@@ -165,14 +165,14 @@ public class Persona extends Cliente {
         }
 
       if (account.equalsIgnoreCase("vista")) {
-        this.depositar(requestIntInput("Ingrese la cantidad del deposito inicial: "), account);
+        this.depositar(Input.requestIntInput("Ingrese la cantidad del deposito inicial: "), account);
       } else {
-        this.resetCredito(requestIntInput("Ingrese la cantidad del credito inicial: "));
+        this.resetCredito(Input.requestIntInput("Ingrese la cantidad del credito inicial: "));
       }
 
     } else {
       account = "vista";
-      this.depositar(requestIntInput("Ingrese la cantidad del deposito inicial: "), account);
+      this.depositar(Input.requestIntInput("Ingrese la cantidad del deposito inicial: "), account);
     }
   }
 }

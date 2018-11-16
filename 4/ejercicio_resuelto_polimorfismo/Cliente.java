@@ -1,31 +1,6 @@
 import java.util.Scanner;
 
 public abstract class Cliente {
-
-  //Helper function
-  public static String requestInput(String request) {
-    Scanner keyboard = new Scanner(System.in);
-    System.out.print("\n".concat(request));
-    return keyboard.nextLine().trim();
-  }
-
-  public static int requestIntInput(String request) {
-    Scanner keyboard = new Scanner(System.in);
-    int ret = 0;
-    boolean input = true;
-    while (input) {
-      System.out.print("\n".concat(request));
-      try {
-        ret = Integer.parseInt(keyboard.nextLine().trim());
-        input = false;
-      } catch (Exception e) {
-        System.out.println("Error, no se identificó el numero, debe ingresar una cantidad entera!");
-      }
-    }
-
-    return ret;
-  }
-                                                      //http://bit.ly/ejercicio1herencia
   //Instance variables
 
   private String nombre;
@@ -81,10 +56,10 @@ public abstract class Cliente {
   public Cliente() {
     // System.out.print("\nIngrese Nombre del cliente: ");
     // this.nombre = keyboard.nextLine();
-    this.nombre = requestInput("Ingrese Nombre del cliente: ");
+    this.nombre = Input.requestInput("Ingrese Nombre del cliente: ");
     // System.out.print("\nIngrese RUT del cliente: ");
     // this.rut = keyboard.nextLine();
-    this.rut = requestInput("Ingrese RUT del cliente: ");
+    this.rut = Input.requestInput("Ingrese RUT del cliente: ");
     this.deudor = false;
     this.saldoVista = 0;
     this.saldoCredito = 0;

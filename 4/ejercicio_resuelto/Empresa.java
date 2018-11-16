@@ -128,13 +128,13 @@ public class Empresa extends Cliente {
     System.out.print("\nIndique el sector empresarial: ");
     this.sector = keyboard.nextLine();
 
-    this.numeroDeEmpleados = requestIntInput("Indique el numero de empleados: ");
+    this.numeroDeEmpleados = Input.requestIntInput("Indique el numero de empleados: ");
 
     account = "vista";
-    this.depositar(requestIntInput("Ingrese la cantidad del deposito inicial a la cuenta vista: "), account);
+    this.depositar(Input.requestIntInput("Ingrese la cantidad del deposito inicial a la cuenta vista: "), account);
 
     account = "credito";
-    this.resetCredito(requestIntInput("Ingrese la cantidad de credito inicial: "));
+    this.resetCredito(Input.requestIntInput("Ingrese la cantidad de credito inicial: "));
 
 
   }

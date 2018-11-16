@@ -31,9 +31,13 @@ public class DrawImageDemo {
                 } catch (Exception e) {
                 //TODO: handle exception
             }
+
+            Graphics2D g2d = (Graphics2D)g;
+
+            g2d.rotate(0.5);
+
             g.drawImage(image, 120, 20, 500, 500, null);
             
-
         }  
     }
 

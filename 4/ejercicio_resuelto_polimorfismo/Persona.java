@@ -111,7 +111,6 @@ public class Persona extends Cliente {
 
   public Persona() {
     boolean input = true;
-    int deposit;
     String account = "";
     while (input) {
       try {
@@ -144,7 +143,6 @@ public class Persona extends Cliente {
   public Persona(int actual, int maximo) {
     //Codigo Constructor para Estudiante
     boolean input = true;
-    int deposit;
     String account = "";
 
     if (actual >= (maximo - 2)) {

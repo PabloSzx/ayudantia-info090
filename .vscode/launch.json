@@ -2,6 +2,26 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - test",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "test",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - text",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "text",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DrawImageDemo",
             "request": "launch",
             "cwd": "${workspaceFolder}",
